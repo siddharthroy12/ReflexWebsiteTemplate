@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+	--color1: #32373E;
+	--color2: #2ECC8A;
+	--color3: #313449;
+}
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	transition-duration: 200ms;
 }
 
 body {
@@ -18,11 +25,25 @@ a {
 }
 
 .container {
-  max-width: 1140px;
-  margin: auto;
+	max-width: 1140px;
+	margin: auto;
 }
 
 .btn {
+	padding: 0.5rem 1rem;
+	border-radius: 50px;
+	border: 1px solid var(--color2);
+	color: white;
+	background-color: var(--color2);
+}
+
+.btn:hover {
+	background-color: white;
+	color: var(--color2);
+}
+
+.highlight {
+	color: var(--color2);
 }
 
 header {
@@ -34,7 +55,8 @@ header {
 	display: flex;
 	justify-content: space-between;
   align-items: center ;
-  height: 5rem;
+  height: 4rem;
+	padding: 0 2rem;
 }
 
 .header-nav {
@@ -46,12 +68,29 @@ header {
 	list-style: none;
 }
 
-.header-nav-list > * {
+.header-nav-list > li {
 	margin-left: 1rem;
 }
 
 .header-nav-list a {
-  color: #222222;
+	color: var(--color3);
+	font-weight: 500;
+}
+
+.header-nav-list a:hover {
+	color: var(--color2) !important;
+}
+
+.contact-btn {
+	background-color: var(--color2);
+	border: 1px solid var(--color2);
+	padding: 0.4rem 0.9rem;
+	border-radius: 50px;
+	color: white !important;
+}
+
+.contact-btn:hover {
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .company-logo-container {
@@ -64,16 +103,47 @@ header {
 }
 
 .company-logo {
-  --size: 1.9rem;
-  display: block;
-  width: var(--size);
-  height: var(--size);
+	font-size: 1.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--color2);
 }
 
 .company-name {
   letter-spacing: 1px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
+	color: var(--color1);
+}
+
+#intro {
+	display: flex;
+	align-items: center;
+	height: 30rem;
+}
+
+.intro-text {
+	width: 50%;
+}
+
+.intro-header {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: var(--color1);
+	line-height: 3rem;
+	margin-bottom: 2rem;
+}
+
+.intro-paragraph {
+	color: var(--color3);
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.intro-image {
+	display: block;
+	width: 50%;
 }
 
 
