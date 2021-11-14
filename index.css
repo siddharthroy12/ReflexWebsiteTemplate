@@ -4,6 +4,8 @@
 	--color1: #32373E;
 	--color2: #2ECC8A;
 	--color3: #313449;
+	--color4: #F5F5F5;
+	--color5: #5d636b;
 }
 
 * {
@@ -46,6 +48,7 @@ a {
 	color: var(--color2);
 }
 
+/* Header */
 header {
 	background-color: #ffffff;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
@@ -117,6 +120,8 @@ header {
 	color: var(--color1);
 }
 
+/* Intro */
+
 #intro {
 	display: flex;
 	align-items: center;
@@ -146,4 +151,33 @@ header {
 	width: 50%;
 }
 
+/* Trusted by */
+#trustedby {
+	padding: 3rem 0;
+	background-color: var(--color4);
+}
+
+.trustedby-header {
+	text-align: center;
+	font-style: italic;
+	color: var(--color1);
+	margin-bottom: 3rem;
+}
+
+.trustedby-companies {
+	display: flex;
+	justify-content: center;
+}
+
+.trustedby-company {
+	margin: 0 2rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: var(--color5);
+	font-style: italic;
+}
+
+.trustedby-company > i {
+	margin-right: 0.5rem;
+}
 
