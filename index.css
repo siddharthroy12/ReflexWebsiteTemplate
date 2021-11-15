@@ -48,17 +48,28 @@ a {
 	color: var(--color2);
 }
 
+.section-heading {
+	color: var(--color3);
+	font-size: 2rem;
+	max-width: 35rem;
+	margin: auto;
+	margin-bottom: 6rem;
+	text-align: center;
+}
+
 /* Header */
 header {
-	background-color: #ffffff;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+	background-color: white;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+	position: sticky;
+	top: 0;
 }
 
 .header-container {
 	display: flex;
 	justify-content: space-between;
-  align-items: center ;
-  height: 4rem;
+	align-items: center ;
+	height: 4rem;
 	padding: 0 2rem;
 }
 
@@ -126,6 +137,7 @@ header {
 	display: flex;
 	align-items: center;
 	height: 30rem;
+	margin-bottom: 2rem;
 }
 
 .intro-text {
@@ -138,6 +150,8 @@ header {
 	color: var(--color1);
 	line-height: 3rem;
 	margin-bottom: 2rem;
+	max-width: 30rem;
+	width: 100%;
 }
 
 .intro-paragraph {
@@ -155,6 +169,7 @@ header {
 #trustedby {
 	padding: 3rem 0;
 	background-color: var(--color4);
+	margin-bottom: 2rem;
 }
 
 .trustedby-header {
@@ -179,5 +194,42 @@ header {
 
 .trustedby-company > i {
 	margin-right: 0.5rem;
+}
+
+/* Services */
+
+#services {
+	text-align: center;
+	padding: 5rem 0;
+}
+
+.services-list {
+	display: flex;
+	justify-content: center;
+	background-color: var(--color4);
+	border-radius: 10px;
+	padding: 2rem 0.5rem;
+}
+
+.service-box {
+	width: 15rem;
+	margin: 0 1rem;
+}
+
+.service-box-icon {
+	font-size: 4rem;
+	color: var(--color2);
+	margin-bottom: 2rem;
+}
+
+.service-box-title {
+	color: var(--color1);
+	font-size: 1.3rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.service-box-desc {
+	color: var(--color5);
 }
 
