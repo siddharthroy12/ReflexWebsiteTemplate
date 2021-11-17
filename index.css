@@ -60,6 +60,12 @@ a {
 	text-align: center;
 }
 
+.section-icon {
+	font-size: 3.5rem;
+	margin-bottom: 2rem;
+	color: var(--color2);
+}
+
 /* Header */
 header {
 	background-color: white;
@@ -242,6 +248,10 @@ header {
 	margin-bottom: 10rem;
 }
 
+.service-container:last-child {
+	margin-bottom: 0;
+}
+
 .text-container {
 	width: 50%;
 	padding: 0 4rem;
@@ -266,5 +276,30 @@ header {
 .solution-paragraph {
 	color: var(--color5);
 	margin-bottom: 3rem;
+}
+
+/* Projects */
+
+.projects-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project-card {
+	margin: 0.7rem;
+	width: 20rem;
+}
+
+.project-image {
+	display: block;
+	width: 100%;
+	height: 14rem;
+	object-fit: cover;
+}
+
+.project-name {
+	padding: 1rem;
+	background-color: var(--color1);
+	color: white;
 }
 
