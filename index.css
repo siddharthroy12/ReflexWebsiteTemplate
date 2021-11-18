@@ -67,6 +67,12 @@ a {
 	color: var(--color2);
 }
 
+@media only screen and (max-width: 900px) {
+	:root {
+		font-size:  0.9rem;
+	}
+}
+
 /* Header */
 header {
 	background-color: white;
@@ -89,6 +95,7 @@ header {
 
 .header-nav-list {
 	display: flex;
+	align-items: center;
 	list-style: none;
 }
 
@@ -113,6 +120,20 @@ header {
 
 .contact-btn:hover {
 	background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-btn {
+	border: none;
+	background-color: unset;
+	padding: 0.5rem 0.9rem;
+	font-size: 1.4rem;
+	border-radius: 3px;
+	display: none;
+}
+
+.menu-btn:hover {
+	background-color: var(--color2);
+	color: white;
 }
 
 .company-logo-container {
@@ -140,12 +161,21 @@ header {
 	color: var(--color1);
 }
 
+@media only screen and (max-width: 900px) {
+	.menu-btn {
+		display: block;
+	}
+
+	.header-nav-list {
+		display: none;
+	}
+}
+
 /* Intro */
 
 #intro {
 	display: flex;
 	align-items: center;
-	height: 30rem;
 	margin-bottom: 2rem;
 }
 
@@ -174,6 +204,26 @@ header {
 	width: 50%;
 }
 
+@media only screen and (max-width: 900px) {
+	#intro {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.intro-text {
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+
+	.intro-header {
+		max-width: 100%;
+	}
+
+	.intro-image {
+		width: 100%;
+	}
+}
+
 /* Trusted by */
 #trustedby {
 	padding: 3rem 0;
@@ -199,10 +249,19 @@ header {
 	font-weight: 600;
 	color: var(--color5);
 	font-style: italic;
+	display: flex;
+	align-items: center;
 }
 
 .trustedby-company > i {
 	margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+	.trustedby-companies {
+		justify-content: flex-start;
+		overflow-x: auto;
+	}
 }
 
 /* Services */
@@ -223,7 +282,7 @@ header {
 
 .service-box {
 	width: 15rem;
-	margin: 0 1rem;
+	margin: 1rem;
 }
 
 .service-box-icon {
@@ -241,6 +300,19 @@ header {
 
 .service-box-desc {
 	color: var(--color5);
+}
+
+@media only screen and (max-width: 900px) {
+	.services-list {
+		flex-direction: column;
+		align-items: center;
+		background-color: unset;
+		box-shadow: none;
+	}
+
+	.service-box-icon {
+		font-size: 8rem;
+	}
 }
 
 /* Solutions */
@@ -281,6 +353,27 @@ header {
 	margin-bottom: 3rem;
 }
 
+@media only screen and (max-width: 900px) {
+	.service-container {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	
+	.service-container:nth-child(even) {
+		flex-direction: column-reverse;
+	}
+
+	.text-container {
+		width: 100%;
+		padding: 4rem 0;
+	}
+
+	.image-container {
+		width: 100%;
+		padding: 4rem;
+	}
+}
+
 /* Projects */
 
 .projects-grid {
@@ -292,6 +385,8 @@ header {
 .project-card {
 	margin: 0.7rem;
 	width: 20rem;
+	border-radius: 3px;
+	overflow: hidden;
 }
 
 .project-card > a {
@@ -313,6 +408,22 @@ header {
 
 .project-name > em {
 	font-style: bold;
+}
+
+@media only screen and (max-width: 900px) {
+	.projects-grid {
+		padding: 2rem;
+	}
+
+	.project-card {
+		width: 100%;
+	}
+	
+	.project-image {
+		height: auto;
+		width: 100%;
+		aspect-ratio: 1;
+	}
 }
 
 /* Contact */
