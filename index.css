@@ -75,8 +75,9 @@ a {
 
 /* Header */
 header {
+	--shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 	background-color: white;
-	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: var(--shadow);
 	position: sticky;
 	height: 3.5rem;
 	top: 0;
@@ -168,13 +169,34 @@ header {
 	color: var(--color1);
 }
 
+
+.header-nav-list-expand {
+	display: block !important;
+	height: auto !important;
+}
+
 @media only screen and (max-width: 900px) {
 	.menu-btn {
 		display: block;
+		z-index: 7;
 	}
 
 	.header-nav-list {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		background-color: white;
+		padding: 2rem;
+		box-shadow: var(--shadow);
+		height: 0;
+		overflow: hidden;
 		display: none;
+	}
+
+	.header-nav-list > li {
+		margin: 1.5rem 0;
 	}
 }
 
