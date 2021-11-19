@@ -79,6 +79,7 @@ header {
 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 	position: sticky;
 	top: 0;
+	z-index: 5;
 }
 
 .header-container {
@@ -311,7 +312,7 @@ header {
 	}
 
 	.service-box-icon {
-		font-size: 8rem;
+		font-size: 6rem;
 	}
 }
 
@@ -366,11 +367,12 @@ header {
 	.text-container {
 		width: 100%;
 		padding: 4rem 0;
+		marign-bottom: 0;
 	}
 
 	.image-container {
 		width: 100%;
-		padding: 4rem;
+		padding: 3rem;
 	}
 }
 
@@ -385,8 +387,10 @@ header {
 .project-card {
 	margin: 0.7rem;
 	width: 20rem;
-	border-radius: 3px;
+	border-radius: 5px;
 	overflow: hidden;
+	position: relative;
+	aspect-ratio: 1;
 }
 
 .project-card > a {
@@ -397,6 +401,7 @@ header {
 	display: block;
 	width: 100%;
 	height: 14rem;
+	height: 100%;
 	object-fit: cover;
 }
 
@@ -404,6 +409,10 @@ header {
 	padding: 1rem;
 	background-color: var(--color1);
 	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .project-name > em {
@@ -412,17 +421,11 @@ header {
 
 @media only screen and (max-width: 900px) {
 	.projects-grid {
-		padding: 2rem;
+		padding: 1rem;
 	}
 
 	.project-card {
 		width: 100%;
-	}
-	
-	.project-image {
-		height: auto;
-		width: 100%;
-		aspect-ratio: 1;
 	}
 }
 
@@ -498,17 +501,34 @@ header {
 
 .contact-sources {
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 }
 
 .contact-sources > li {
 	margin-right: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .contact-sources > li > i {
 	color: var(--color2);
 }
 
+@media only screen and (max-width: 900px) {
+	#contact {
+		flex-direction: column;
+	}
+
+	#contact .text-container {
+		padding-right: 0 !important;
+		margin-bottom: 6rem;
+	}
+
+	.form-container {
+		padding-left: 0;
+		width: 100%;
+	}
+}
 /* Footer */
 
 #footer {
@@ -557,4 +577,16 @@ header {
 .footer-links a {
 	color: var(--color3);
 	text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+	.footer-contents {
+		flex-direction: column;
+	}
+	
+	.footer-subsection {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
 }
