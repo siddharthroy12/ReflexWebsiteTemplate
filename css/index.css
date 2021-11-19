@@ -169,13 +169,11 @@ header {
 	color: var(--color1);
 }
 
-
-.header-nav-list-expand {
-	display: block !important;
-	height: auto !important;
-}
-
 @media only screen and (max-width: 900px) {
+	.header-nav-list-expand {
+		display: block !important;
+		height: auto !important;
+	}
 	.menu-btn {
 		display: block;
 		z-index: 7;
