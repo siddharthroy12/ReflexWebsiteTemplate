@@ -181,9 +181,13 @@ header {
 		z-index: 7;
 	}
 
+	.header-expand {
+		height: 3.5rem;
+	}
+
 	.header-nav-list {
 		position: fixed;
-		top: 0rem;
+		top: 3.5rem;
 		left: 0;
 		right: 0;
 		flex-direction: column;
