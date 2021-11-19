@@ -1,4 +1,4 @@
-# Reflex: Sotware Business Website Template
+# Reflex: Software Business Website Template
 
 ![](./screenshot/screenshot.png)
 
