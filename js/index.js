@@ -32,6 +32,7 @@ function onload() {
 	getElements();
 
 	headerEl.classList.add("header-expand");
+	onScroll();
 	addEventListener("scroll", onScroll);
 
 	menuBtnEl.addEventListener("click", toggleMenu);
